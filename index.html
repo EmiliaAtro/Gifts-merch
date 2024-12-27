@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gifts & Merch</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="less/styles.less">
+    <link rel="stylesheet" href="less/styles.less"> 
  </head>
   <body>
     <div class="container">
@@ -21,7 +21,7 @@
           <button class="phone-button">+7 (123) 456-78-90</button>          
           <div class="user-account">
             <img class="user-icon" src="img/user.svg" alt="Аккаунт">
-            <span class="active">RU</span>&nbsp;/&nbsp;<span class="inactive">ENG</span>
+            <span class="active" id="ru">RU</span>&nbsp;/&nbsp;<span class="inactive" id="en">ENG</span>
           </div>
           <div class="hamburger-menu">
             <img class="menu-icon" src="img/menu.png" alt="Меню">
@@ -30,11 +30,11 @@
         
         <nav class="navigation">
           <div class="navigation-left">
-            <a href="#">Наборы</a>
+            <a href="products.html">Наборы</a>
             <a href="products.html">Все&nbsp;товары</a>
             <a href="products.html">Пошив</a>
             <a href="production.html">Производство</a>
-            <a href="#">Информация</a>
+            <a href="products.html">Информация</a>
           </div>
           <div class="navigation-right">
             <img src="img/sale.png" alt="Баннер">
@@ -43,11 +43,11 @@
         
         <section class="hero">
           <div class="hero-title">
+            <h1>Свежее дыхание в корпоративной жизни</h1>
+            <p>Ми вдосконалили процес замовлення продукції для того, щоб Ви і Ваша компанія сконцентрувались на основних задачах і досягали поставлених цілей.</p>
             <div class="hero-banner">
               <img src="img/sale.png" alt="Баннер">
             </div>
-            <h1>Свежее дыхание в корпоративной жизни</h1>
-            <p>Ми вдосконалили процес замовлення продукції для того, щоб Ви і Ваша компанія сконцентрувались на основних задачах і досягали поставлених цілей.</p>
             <div class="hero-icons">
               <div class="hero-icon">
                 <img src="img/circle.png" alt="Высокое качество">
@@ -69,6 +69,23 @@
         </section>
       </div>
 
+      <div class="hero-icons2-wrapper">
+        <div class="hero-icons2">
+          <div class="hero-icon">
+            <img src="img/circle.png" alt="Высокое качество">
+            <p>Высокое качество<br><span class="bold">ONLY</span></p>
+          </div>
+          <div class="hero-icon">
+            <img src="img/circle.png" alt="Поддержка 24/7">
+            <p>Поддержка менеджера<br><span class="bold">24/7</span></p>
+          </div>
+          <div class="hero-icon">
+            <img src="img/circle.png" alt="Turbo-режим">
+            <p>Выполнение заказа в<br><span class="bold">TURBO-режиме</span></p>
+          </div>
+        </div>
+      </div>
+
       <section class="popular">
         <div class="popular-header">
           <div class="popular-header-title">
@@ -76,7 +93,7 @@
             <p>Товары, которые наиболее часто заказывают наши клиенты</p>
           </div>
           <div class="popular-header-icon">
-            <a href="#">Все товары <img src="img/arrow.svg" alt="Все товары"></a>
+            <a href="products.html">Все товары <img src="img/arrow.svg" alt="Все товары"></a>
           </div>
         </div>
         <div class="popular-products">
@@ -99,8 +116,8 @@
           <h2>Хотите удивить ваших коллег/партнеров необычными подарками?</h2>
           <p>Выбирайте готовые подарочные наборы или укажите критерии по которым мы соберем для Вас уникальный бокс.</p>
           <div class="creative-buttons">
-            <button class="creative-button">Перейти к наборам</button>
-            <button class="creative-button secondary">Создать свой</button>
+            <a href="products.html"><button class="creative-button">Перейти к наборам</button></a>
+            <a href="production.html"><button class="creative-button secondary">Создать свой</button></a>
           </div>
         </div>
         <div class="creative-image">
@@ -187,7 +204,7 @@
         <div class="footer-container">
           <div class="footer-about">
             <img src="img/logo.png" alt="Лого" class="logo">
-            <p>Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее</p>
+            <p class="footer-about-text">Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее</p>
             <p><span class="bold">+7 (123) 456-78-90</span><br>
               info@example.com</p>
             <div class="footer-social-icons">
@@ -199,18 +216,18 @@
           <div class="footer-categories">
             <p class="footer-title">Категории</p>
             <ul>
-              <li><a href="#">Пошив</a></li>
-              <li><a href="#">Все товары</a></li>
-              <li><a href="#">Наборы</a></li>
-              <li><a href="#">Производство</a></li>
+              <li><a href="products.html">Пошив</a></li>
+              <li><a href="products.html">Все товары</a></li>
+              <li><a href="products.html">Наборы</a></li>
+              <li><a href="production.html">Производство</a></li>
             </ul>
           </div>
           <div class="footer-info">
             <p class="footer-title">Информация</p>
             <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="index.html">О нас</a></li>
+              <li><a href="index.html">FAQ</a></li>
+              <li><a href="index.html">Контакты</a></li>
             </ul>
           </div>
           <div class="footer-contact-manager">
@@ -229,6 +246,8 @@
     <script src="js/script.js"></script>
     <script>
       scrollBrands();
+      switchLanguage();
+      submitContactManager();
     </script>
     <script src="js/year.js"></script>
   </body>
