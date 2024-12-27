@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gifts & Merch</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="less/styles.less">
+    <link rel="stylesheet" href="less/styles.less"> 
   </head>
   <body>
     <div class="container">
@@ -21,7 +21,7 @@
           <button class="phone-button">+7 (123) 456-78-90</button>
           <div class="user-account">
             <img class="user-icon" src="img/user.svg" alt="Аккаунт">
-            <span class="active">RU</span>&nbsp;/&nbsp;<span class="inactive">ENG</span>
+            <span class="active" id="ru">RU</span>&nbsp;/&nbsp;<span class="inactive" id="en">ENG</span>
           </div>
           <div class="hamburger-menu">
             <img class="menu-icon" src="img/menu.png">
@@ -30,11 +30,11 @@
         
         <nav class="navigation">
           <div class="navigation-left">
-            <a href="#">Наборы</a>
+            <a href="products.html">Наборы</a>
             <a href="products.html">Все&nbsp;товары</a>
             <a href="products.html">Пошив</a>
             <a href="#">Производство</a>
-            <a href="#">Информация</a>
+            <a href="products.html">Информация</a>
           </div>
           <div class="navigation-right">
             <img src="img/sale.png" alt="Баннер">
@@ -46,7 +46,7 @@
             <div class="hero-nav">Главная / Производство</div>
             <h1>Нужно создать уникальный продукт для вашей компании</h1>
             <p>Почему? Потому что это ощутимо и это волнует. Это вовлекает, повышает осведомленность и вызывает эмоции.</p>
-            <button class="hero-button">Написать менеджеру</button>
+            <a href="products.html"><button class="hero-button">Написать менеджеру</button></a>
           </div>
           <div class="hero-image">
             <img src="img/clothes.png" alt="Красивая картинка">
@@ -86,7 +86,7 @@
         <div class="footer-container">
           <div class="footer-about">
             <img src="img/logo.png" alt="Лого" class="logo">
-            <p>Свежее дыхание в корпоративной жизни и<br> жизни корпоративной дыхание свежее</p>
+            <p class="footer-about-text">Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее</p>
             <p><span class="bold">+7 (123) 456-78-90</span><br>
               info@example.com</p>
             <div class="footer-social-icons">
@@ -98,18 +98,18 @@
           <div class="footer-categories">
             <p class="footer-title">Категории</p>
             <ul>
-              <li><a href="#">Пошив</a></li>
-              <li><a href="#">Все товары</a></li>
-              <li><a href="#">Наборы</a></li>
-              <li><a href="#">Производство</a></li>
+              <li><a href="products.html">Пошив</a></li>
+              <li><a href="products.html">Все товары</a></li>
+              <li><a href="products.html">Наборы</a></li>
+              <li><a href="production.html">Производство</a></li>
             </ul>
           </div>
           <div class="footer-info">
             <p class="footer-title">Информация</p>
             <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="index.html">О нас</a></li>
+              <li><a href="index.html">FAQ</a></li>
+              <li><a href="index.html">Контакты</a></li>
             </ul>
           </div>
           <div class="footer-contact-manager">
@@ -128,6 +128,8 @@
     <script src="js/script.js"></script>
     <script>
       showProducts();
+      switchLanguage();
+      submitContactManager();
     </script>
     <script src="js/year.js"></script>
   </body>
