@@ -144,6 +144,13 @@ a button:hover {
 }
 
 @media (max-width: 320px) {
+    body {
+        background: url('../img/bg-purple.png') no-repeat;
+        align-items: flex-start;
+    }
+    section {
+        padding-top: 60px;
+    }
     h1 {
         font-size: 40px;
         line-height: 1;
@@ -155,7 +162,7 @@ a button:hover {
         font-size: 10px;
     }
     a button {
-        width: 180px;
+        width: 280px;
         padding: 8px 14px;
     }
 }
