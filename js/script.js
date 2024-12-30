@@ -52,27 +52,6 @@ function showProducts() {
 	document.getElementById('products').innerHTML = s;
 }
 
-function loadProducts() {
-    xhr = new XMLHttpRequest();
-    xhr.open('GET', 'data/products.json');
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onreadystatechange = function() {
-		if (xhr.readyState === 4) {
-        	data = JSON.parse(xhr.responseText);
-		    s = '';
-		    for (i = 0; i < data.length; i++) {
-		    	tmp = '<a href=\"' + data[i].link + '\"><div class=\"roduct-item\">';
-		    	tmp += '<img src=\"' + data[i].image + '\"" alt=\"' + data[i].name + '\">';
-		    	tmp += '<p>' + data[i].name + '</p>';
-		    	tmp += '</div></a>';
-		    	s += tmp;
-			};
-			document.getElementById('products').innerHTML = s;
-    	}
-    };
-    xhr.send();	
-}
-
 function scrollBrands() {
 	wrapper = document.querySelector('.collabs-logos-wrapper');
 	prev = document.querySelector('.collabs-nav.prev');
